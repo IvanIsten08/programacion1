@@ -33,15 +33,16 @@ public class Tweets {
         Scanner teclado = new Scanner(System.in);
         
          System.out.println("Ingrese un nuevo Tweet (No mayor a 280 caracteres) : ");
-         String tw = teclado.next();
+         String tw = teclado.nextLine();
          System.out.println("Ingrese su usuario(Tiene que comenzar con un '@'): ");
          String usuario = teclado.next();
          String usuarioFinal = "@" + usuario;
-         String tweet = usuarioFinal + tw;
+         String tweet = usuarioFinal + "\n" + tw;
          
          
          if(longitudTweet(tweet)){
              System.out.println("El tweet cumple con el limite de 280 caracteres.");
+             System.out.println(tweet);
          }else{
              System.out.println("El tweet excede el limite de 280 caracteres.");
          }
