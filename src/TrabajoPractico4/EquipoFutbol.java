@@ -42,8 +42,9 @@ public class EquipoFutbol {
     }
     
     public void eliminarJugador(Jugador jugador){
+        String borrado = jugador.nombre;
         jugadores.remove(jugador);
-        System.out.println("Jugador eliminado: "+jugador);
+        System.out.println("Jugador eliminado: "+ borrado);
     }
     
     public void mostrarJugador(){
