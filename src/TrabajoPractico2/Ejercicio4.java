@@ -37,7 +37,7 @@ public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
     Ejercicio4 calculo = new Ejercicio4();
     
-    
+    //Pedir los datos de las figuras
     System.out.println("Ingrese el valor de los lados de un cuadrado: ");
     int cuadrado = scanner.nextInt();
     System.out.println("Ingrese el valor de la base de un rectangulo: ");
@@ -47,6 +47,7 @@ public static void main(String[] args){
     System.out.println("Ingrese el radio de un circulo: ");
     int radio = scanner.nextInt();
     
+    //Mostrar por pantalla los datos de cada figura
     System.out.println("El perimetro del cuadrado es: " + calculo.perimetro(cuadrado, cuadrado));
     System.out.println("El perimetro del rectangulo es: " + calculo.perimetro(baseRectangulo, alturaRectangulo));
     System.out.println("El perimetro del circulo es: " + calculo.perimetroCirc(radio));
